@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bait ul food</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <script>
+        // firebaseinit
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyAFJFB8zEr2YmJWCIvBqULqmTDG1-adVlY",
+            authDomain: "hackathonbatch7.firebaseapp.com",
+            projectId: "hackathonbatch7",
+            storageBucket: "hackathonbatch7.appspot.com",
+            messagingSenderId: "900761913502",
+            appId: "1:900761913502:web:845deb3024c0129d93538f",
+            measurementId: "G-NHJ027MGVX"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+    </script>
+
+
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo"><i class="fas fa-utensils"></i>bait ul food</a>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <!-- <a href="#speciality">speciality</a> -->
+            <!-- <a href="#popular">popular</a> -->
+            <!-- <a href="#gallery">gallery</a> -->
+            <!-- <a href="#review">review</a> -->
+            <!-- <a href="#order">order</a> -->
+        </nav>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- home section starts  -->
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>burger</h3>
+            <button type="submit" onclick="registration()" class="btn">order now</button> </div>
+
+        <div class="image">
+            <img src="../mainweb/images/home-img.png" alt="">
+        </div>
+
+    </section>
+
+    <!-- home section ends -->
+
+    <!-- speciality section starts  -->
+
+    <section class="speciality" id="speciality">
+
+        <h1 class="heading"> our <span>Items</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img class="image" src="images/cheesey beef.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>cheesey beef burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/cheesy burger.png" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>cheesy burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/beef.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>beef burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/garlic burger.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>garlic burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/double zinger burger.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>double zinger burger</h3>
+                </div>
+            </div>
+            <div class="box">
+                <img class="image" src="images/zinger with fries.jpg" alt="">
+                <div class="content">
+                    <img src="images/s-1.png" alt="">
+                    <h3>zinger with fries</h3>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="step-container">
+
+        <h1 class="heading">how it <span>works</span></h1>
+
+        <section class="steps">
+
+            <div class="box">
+                <img src="images/step-1.jpg" alt="">
+                <h3>choose your favorite food</h3>
+            </div>
+            <div class="box">
+                <img src="images/step-2.jpg" alt="">
+                <h3>free and fast delivery</h3>
+            </div>
+
+            <div class="box">
+                <img src="images/step-4.jpg" alt="">
+                <h3>and finally, enjoy your food</h3>
+            </div>
+
+        </section>
+
+    </div>
+
+
+
+    <section class="gallery" id="gallery">
+
+        <h1 class="heading"> our food <span> gallery </span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/beef.jpg" alt="">
+                <div class="content">
+                    <h3>beef burger</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/cheesey beef.jpg" alt="">
+                <div class="content">
+                    <h3>cheesey beef burger</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="images/garlic burger.jpg" alt=" ">
+                <div class="content ">
+                    <h3>garlic burger</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button> </div>
+            </div>
+            <div class="box ">
+                <img src="images/double zinger burger.jpg " alt=" ">
+                <div class="content ">
+                    <h3>double zinger burger</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button> </div>
+            </div>
+            <div class="box ">
+                <img src="images/zinger with fries.jpg " alt=" ">
+                <div class="content ">
+                    <h3>zinger with fries</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button> </div>
+            </div>
+            <div class="box ">
+                <img src="images/cheesy burger.png" alt=" ">
+                <div class="content ">
+                    <h3>cheesy burger</h3>
+                    <button type="submit" onclick="registration()" class="btn">order now</button> </div>
+            </div>
+
+
+
+        </div>
+
+    </section>
+    <section class="order" id="order">
+
+        <h1 class="heading"> <span>order</span> now </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/order-img.jpg" alt="">
+            </div>
+
+            <form onsubmit="register()">
+
+                <div class="inputBox">
+                    <input type="text " placeholder="name " id="username">
+                    <input type="email " placeholder="email " id="email">
+                </div>
+
+                <div class="inputBox ">
+                    <input type="number " placeholder="number " id="phonenumber">
+                    <input type="text " placeholder="food name " id="product">
+                </div>
+
+                <textarea placeholder="address " name=" " id="address" cols="30 " rows="10 "></textarea>
+
+                <input type="submit " value="order now " onclick="register()" class="btn ">
+
+            </form>
+
+
+
+            <p id="messenge">
+            </p>
+        </div>
+
+    </section>
+
+    <section class="footer ">
+
+        <div class="share ">
+            <a href="# " class="btn ">facebook</a>
+            <a href="# " class="btn ">twitter</a>
+            <a href="# " class="btn ">instagram</a>
+            <a href="# " class="btn ">pinterest</a>
+            <a href="# " class="btn ">linkedin</a>
+        </div>
+
+        <h1 class="credit "> created by <span> Shaheer shahzad   </span> | all rights reserved! </h1>
+
+    </section>
+
+    <!-- scroll top button  -->
+    <a href="#home " class="fas fa-angle-up " id="scroll-top "></a>
+
+    <!-- loader -->
+    <!-- <div class="loader-container ">
+            <img src="images/loader.gif " alt=" ">
+        </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- custom js file link  -->
+    <script src="script.js "></script>
+    <script src="../restuarant/app.js "></script>
+
+
+
+</body>
+
+</html>

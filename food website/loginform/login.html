@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log-In-Form</title>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="bg">
+    <div class="container">
+        <div class="myCard">
+
+            <center>
+                <div class="myLeftCtn">
+
+                    <!-- <form class="myForm text-center"> -->
+                    <header style="color: aqua;">Log in to dashboard</header>
+
+
+                    <div class="form-group">
+
+                        <i class="fas fa-user" style="color: aqua;"></i>
+                        <input class="myInput" type="text" placeholder="username" id="username">
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <i class="fas fa-envelope" style="color: aqua;"></i>
+                        <input class="myInput" type="email" placeholder="Email" id="email">
+
+                    </div>
+                    <div class="form-group">
+
+                        <i class="fas fa-key" style="color: aqua;"></i>
+                        <input class="myInput" type="password" placeholder="Password" id="passcode">
+
+                    </div>
+
+                    <div class="button input-box" id="btnid">
+                        <!-- <input type="submit" value="Log in" class="myInput" id="btn" onclick="login()"> -->
+                        <button type="submit" value="Log in" class="myInput" style="color: black;" id="btn" onclick="login()">Log in</button>
+                    </div>
+                    <div class="button input-box" id="btnfp1">
+                        <!-- <input type="submit" value="Log in" class="myInput" id="btn" onclick="login()"> -->
+                        <button type="submit" value="Log in" class="myInput" id="btnfp" style="color: black;" onclick="sendPasswordResetEmail()">Forget password</button>
+                    </div>
+                    <div class="text log-in-text">
+                        <p style="color: white;">Don't have an account?</p>
+                        <a href="index.html"> <label for="flip" id="labletag">Sign up Now</label></a>
+                    </div>
+                    <p id="messagepara"></p>
+
+                    <!-- </form> -->
+                </div>
+            </center>
+
+        </div>
+    </div>
+
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+</body>
+<script src="../js/app.js"></script>
+
+</html>
